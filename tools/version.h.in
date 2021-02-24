@@ -1,0 +1,6 @@
+#define raptotheosis_VERSION_MAJOR "@raptotheosis_VERSION_MAJOR@"
+#define raptotheosis_VERSION_MINOR "@raptotheosis_VERSION_MINOR@"
+#define raptotheosis_VERSION_PATCH "@raptotheosis_VERSION_PATCH@"
+#define VERSION raptotheosis_VERSION_MAJOR  "."  raptotheosis_VERSION_MINOR  "."  raptotheosis_VERSION_PATCH
+#define PACKAGE "raptotheosis"
+#define raptotheosis_SHARE "@CMAKE_INSTALL_FULL_DATADIR@/" PACKAGE
