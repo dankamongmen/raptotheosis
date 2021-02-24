@@ -24,6 +24,15 @@ add_executable(raptotheosis ${SRCS})
 target_include_directories(raptotheosis
   PRIVATE
     "${PROJECT_BINARY_DIR}/include"
-)
+    "${Notcurses_INCLUDE_DIRS}"
+  )
+target_link_directories(raptotheosis
+  PRIVATE
+    "${Notcurses_LIBRARY_DIRS}"
+  )
+target_link_libraries(raptotheosis
+  PRIVATE
+    "${Notcurses_LIBRARIES}"
+  )
 
 install(TARGETS raptotheosis DESTINATION bin)
