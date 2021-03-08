@@ -7,3 +7,6 @@
 package management for velociraptors
 
 [![Build Status](https://drone.dsscaw.com:4443/api/badges/dankamongmen/raptotheosis/status.svg)](https://drone.dsscaw.com:4443/dankamongmen/raptotheosis)
+
+dependencies:
+* notcurses 2.2.3+

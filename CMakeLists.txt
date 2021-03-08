@@ -21,7 +21,7 @@ add_compile_options(-Wall -Wextra -W -Wshadow -Wformat -fexceptions)
 
 #find_package(Threads)
 #set_package_properties(Threads PROPERTIES TYPE REQUIRED)
-find_package(Notcurses 2.2.2 CONFIG)
+find_package(Notcurses 2.2.3 CONFIG)
 set_package_properties(Notcurses PROPERTIES TYPE REQUIRED)
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
 
