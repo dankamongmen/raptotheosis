@@ -8,6 +8,7 @@ steps:
   image: dankamongmen/unstable_builder:2021-02-24a
   commands:
     - export LANG=en_US.UTF-8
+    - apt-get update && apt-get -y upgrade
     - mkdir build
     - cd build
     - cmake .. -DCMAKE_BUILD_TYPE=Release
