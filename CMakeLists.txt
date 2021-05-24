@@ -21,6 +21,8 @@ add_compile_options(-Wall -Wextra -W -Wshadow -Wformat -fexceptions)
 
 #find_package(Threads)
 #set_package_properties(Threads PROPERTIES TYPE REQUIRED)
+find_package(Raptorial 2.0.9 CONFIG)
+set_package_properties(Raptorial PROPERTIES TYPE REQUIRED)
 find_package(Notcurses 2.2.3 CONFIG)
 set_package_properties(Notcurses PROPERTIES TYPE REQUIRED)
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
@@ -34,14 +36,17 @@ target_include_directories(raptotheosis
   PRIVATE
     "${PROJECT_BINARY_DIR}/include"
     "${Notcurses_INCLUDE_DIRS}"
+    "${Raptorial_INCLUDE_DIRS}"
   )
 target_link_directories(raptotheosis
   PRIVATE
     "${Notcurses_LIBRARY_DIRS}"
+    "${Raptorial_LIBRARY_DIRS}"
   )
 target_link_libraries(raptotheosis
   PRIVATE
     "${Notcurses_LIBRARIES}"
+    "${Raptorial_LIBRARIES}"
   )
 
 # Pandoc documentation (man pages, HTML reference)
